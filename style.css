@@ -9,7 +9,7 @@ body {
 .grid-container {
   display: grid;
   gap: 1em;
-  grid-template-rows: 200px 200px 200px;
+  grid-template-rows: 200px 200px;
   grid-template-columns: 200px 200px 200px 200px;
   grid-template-areas:
     "box-1 box-1 box-2 box-3"
@@ -19,4 +19,27 @@ body {
 .box {
   background-color: blue;
   padding: 2rem;
+}
+
+@media (max-width: 56em) {
+  .grid-container {
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-areas:
+      "box-1 box-1 box-2"
+      "box-1 box-1 box-3"
+      "box-4 box-5 box-5";
+  }
+}
+
+@media (max-width: 42em) {
+  .grid-container {
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 200px 200px 200px 200px;
+    grid-template-areas:
+      "box-1 box-2 "
+      "box-1 box-2 "
+      "box-3 box-2 "
+      "box-4 box-5 ";
+  }
 }
