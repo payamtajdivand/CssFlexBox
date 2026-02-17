@@ -1,19 +1,15 @@
 .grid-container {
-  height: 100vh;
   display: grid;
-  grid-template-columns: 300px 300px 300px;
-  grid-template-rows: 300px 300px 300px;
-  justify-items: center;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-  gap: 1rem;
+  grid-auto-columns: 300px;
+  grid-auto-rows: 300px;
+  grid-auto-flow: column;
+  gap: 1em;
 }
 
 .item {
   height: 100px;
   width: 100px;
-  background-color: purple;
+  background-color: hsl(231, 77%, 40%);
   color: white;
   padding: 2em;
   font-size: 2rem;
