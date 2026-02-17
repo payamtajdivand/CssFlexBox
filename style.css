@@ -1,11 +1,18 @@
 .grid-container {
+  height: 100vh;
   display: grid;
-  grid-template-columns: 200px 1fr;
-  grid-template-rows: 100vh;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 300px 300px 300px;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
   gap: 1rem;
 }
 
 .item {
+  height: 100px;
+  width: 100px;
   background-color: purple;
   color: white;
   padding: 2em;
