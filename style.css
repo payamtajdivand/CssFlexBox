@@ -1,0 +1,23 @@
+body {
+  min-height: 800px;
+  display: flex;
+  border: 10px solid black;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+}
+
+.box {
+  background-color: blue;
+  width: 200px;
+  height: 200px;
+  font-size: 40pt;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
